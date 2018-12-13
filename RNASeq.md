@@ -14,6 +14,8 @@
 
 RNA-Seq is a tool that uses next-generation sequencing technologies to profile the RNA transcriptome. RNA-Seq is a high throughput tool that can provide much more in depth analysis of transcriptomes compared to other methods.
 
+> In this analysis, we will be going over the general idea of RNA-Seq and some of the popular tools for its use.
+
 ##### RNA-Seq General Workflow
 - Select Samples of Interest
 - Isolate RNAs
@@ -22,8 +24,8 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 - Map to genome, transcriptome and predicted exon junctions
 - Downstream analysis
 
-
-> Based on these general ideas, then we'll dive deeper by walking through two of the most popular  techniques and then briefly introduce some other methods. 
+![fig1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/bin/nihms229948f1.jpg "Typical RNA-Seq Experiment")
+[[1]](#1)
 
 ## Why RNA-Seq?<a name="232"></a>
 
@@ -58,10 +60,21 @@ These are the advantages and disadvantages compared to Microarrays [[1]](#1):
  </tbody>
 </table>
 
-![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
-[Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
 
-To better understand the difference between these methods, I'd like to distingush them between the following couple of aspects:
+## Methods of Analysis
+RNA-Seq has many different applications depending on the goal of the experiment. There is no optimal pipeline for every scenario, and as such, there are a variety of protocols to quantify RNA.
+![fig2](https://media.springernature.com/lw785/springer-static/image/art%3A10.1186%2Fs13059-016-0881-8/MediaObjects/13059_2016_881_Fig1_HTML.gif "RNA-Seq roadmap")
+<a href="http://refhub.elsevier.com/S0168-9525(15)00063-3/sbref1405">Figure 2</a>
+>The image above shows the generic steps for RNA-seq analysis. This can be split into three main parts: Pre-analysis, Core-analysis, and Advanced-analysis. We will go over each step and some of the tools used.
+### 1) Pre-Analysis
+Retrieve raw reads of a sequence
+FastQC: tool to perform analysis on Illumina reads
+NGSQC: tool to perform analysis on any platform
+Discard low quality reads
+
+### 2) Core-Analysis
+### 3) Advanced Analysis
+
 
 #### 1) Specificity - What does _one, all, many_ mean<a name="2321"></a>
 ‘1’, ‘Many’ and ‘All’ indicate how many loci are interrogated in a given experiment. For example, ‘1 versus All’ indicates that the experiment probes the interaction profile between 1 locus and all other potential loci in the genome. ‘All versus All’ means that one can detect the interaction profiles of all loci, genome-wide, and their interactions with all other genomic loci [1].
@@ -167,11 +180,12 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 # Reference
 
-[1] Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/<br>
+<a name="1"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/">[1] Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63.</a> <br>
 
+Conesa, Ana
+<a name="2"></a>[2] Conesa, Ana, et al. “A Survey of Best Practices for RNA-Seq Data Analysis.” Genome Biology, BioMed Central, 26 Jan. 2016
 
-
-<a name="1"></a>[1] Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
+ Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
 
 [2] Risca, Viviana I., and William J. Greenleaf. "Unraveling the 3D genome: genomics tools for multiscale exploration." Trends in Genetics 31.7 (2015): 357-372.<br>
 
