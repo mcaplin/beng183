@@ -25,7 +25,8 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 - Downstream analysis
 
 ![fig1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/bin/nihms229948f1.jpg "Typical RNA-Seq Experiment")
-[[1]](#1)
+>[[1]](#1)
+>Basic example of an RNA-seq experiment
 
 ## Why RNA-Seq?<a name="232"></a>
 
@@ -64,7 +65,7 @@ These are the advantages and disadvantages compared to Microarrays [[1]](#1):
 ## Methods of Analysis
 RNA-Seq has many different applications depending on the goal of the experiment. There is no optimal pipeline for every scenario, and as such, there are a variety of protocols to quantify RNA.
 ![fig2](https://media.springernature.com/lw785/springer-static/image/art%3A10.1186%2Fs13059-016-0881-8/MediaObjects/13059_2016_881_Fig1_HTML.gif "RNA-Seq roadmap")
-<a href="http://refhub.elsevier.com/S0168-9525(15)00063-3/sbref1405">Figure 2</a>
+><a href="http://refhub.elsevier.com/S0168-9525(15)00063-3/sbref1405">Figure 2</a>
 >The image above shows the generic steps for RNA-seq analysis. This can be split into three main parts: Pre-analysis, Core-analysis, and Advanced-analysis. We will go over each step and some of the tools used.
 ### 1) Pre-Analysis
 Retrieve raw reads of a sequence
@@ -180,7 +181,7 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 # Reference
 
-<a name="1"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/">[1] Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63.</a> <br>
+<a name="1"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/">[1]</a> Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63. <br>
 
 Conesa, Ana
 <a name="2"></a>[2] Conesa, Ana, et al. “A Survey of Best Practices for RNA-Seq Data Analysis.” Genome Biology, BioMed Central, 26 Jan. 2016
