@@ -10,11 +10,11 @@
 
 
 
-## 2.3.1 Introduction<a name="231"></a>
+## Introduction<a name="231"></a>
 
 RNA-Seq is a tool that uses next-generation sequencing technologies to profile the RNA transcriptome. RNA-Seq is a high throughput tool that can provide much more in depth analysis of transcriptomes compared to other methods.
 
-#####Workflow
+##### RNA-Seq General Workflow
 - Select Samples of Interest
 - Isolate RNAs
 - Generate cDNA, fragment and select size, add sequencing adaptors
@@ -22,15 +22,41 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 - Map to genome, transcriptome and predicted exon junctions
 - Downstream analysis
 
-To capture the interaction (crosslink between strings), there are few steps in general:
-- Take a snapshot of the flowing cells - **Crosslink** with fixative agent (formaldehyde)
-- Zoom in on crosslinked part and exclude untangled parts - **Digested** with a restriction enzyme
-- Analyze the components come from the same chromatin - **Reverse crosslink** and **sequence**
-- Finish the jigsaw puzzle and get the results - **Align** the reads and **summarize** the contacts
 
 > Based on these general ideas, then we'll dive deeper by walking through two of the most popular  techniques and then briefly introduce some other methods. 
 
-## 2.3.2 Overivew of 3C methods<a name="232"></a>
+## Why RNA-Seq?<a name="232"></a>
+
+RNA-Seq offers many advantages over previous methods of transcriptome profiling.
+
+These are the advantages and disadvantages compared to Microarrays:
+<table>
+ <tbody>
+    <tr>
+        <th>RNA-Seq Advantages</td>
+		<th>MicroArray advantages<td>
+    </tr>
+	<tr>
+		<td>
+			<ul>
+		<li>Higher resolution</li>
+		<li>Requires less RNA</li>
+		<li>Detect genes with low expression</li>
+		<li>Detect splice variants</li>
+		<li>Lower biases - does not use probes or primers</li>
+		<li>Not dependent on existing genome data</li>
+	</ul>
+	</td>
+	<td>
+		<ul>
+		<li>More cost-efficient</li>
+		<li>Less complex analysis</li>
+		<li>Requires Less computing power</li>
+	</ul>
+	</td>
+	</tr>
+ </tbody>
+</table>
 
 ![](/assets/1-s2.0-S1360138518300827-gr1b2_lrg.jpg)
 [Figure1](https://doi.org/10.1016/j.tplants.2018.03.014). Schematic Representation of Chromosome Conformation Capture (3C) and 3C-Derived Methods. These methods help to elucidate nuclear organization by detecting physical interactions between genetic elements located throughout the genome. Abbreviations: IP, immunoprecipitation; RE, restriction enzyme. **Figure by Sotelo-Silveira, Mariana, et al. Trends in Plant Science (2018).**
