@@ -29,7 +29,7 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 
 RNA-Seq offers many advantages over previous methods of transcriptome profiling.
 
-These are the advantages and disadvantages compared to Microarrays [1](#1):
+These are the advantages and disadvantages compared to Microarrays [[1]](#1):
 <table>
  <tbody>
     <tr>
