@@ -29,7 +29,7 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 
 RNA-Seq offers many advantages over previous methods of transcriptome profiling.
 
-These are the advantages and disadvantages compared to Microarrays:
+These are the advantages and disadvantages compared to Microarrays [1](#1):
 <table>
  <tbody>
     <tr>
@@ -54,7 +54,7 @@ These are the advantages and disadvantages compared to Microarrays:
 		<li>Requires Less computing power</li>
 	</ul>
 	</td>
-	</tr>
+</tr>
  </tbody>
 </table>
 
@@ -166,7 +166,12 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 
 # Reference
-[1] Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
+
+[1] Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/<br>
+
+
+
+<a name="1"></a>[1] Schmitt, Anthony D., Ming Hu, and Bing Ren. "Genome-wide mapping and analysis of chromosome architecture." Nature reviews Molecular cell biology 17.12 (2016): 743.<br>
 
 [2] Risca, Viviana I., and William J. Greenleaf. "Unraveling the 3D genome: genomics tools for multiscale exploration." Trends in Genetics 31.7 (2015): 357-372.<br>
 
