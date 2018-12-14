@@ -72,14 +72,14 @@ Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
 - FastQC: *tool to perform analysis on Illumina reads* 
 - NGSQC: *tool to perform analysis on any platform* 
-After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [2](#2)
+After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
 > Now that we've got our reads, we can begin mapping them to the genome
 ### 2) Core-Analysis
 There are different types of alignment tools for different purposes. The tools you use depend on whether or not you have a reference genome, the types of reads you have, and the degree of specificity you are looking for in your results.
 #### Alignment tools with a reference genome:
 
-##### Short reads:
+Short Reads
 <table>
  <tbody>
     <tr>
@@ -122,7 +122,7 @@ There are different types of alignment tools for different purposes. The tools y
 </table>
 
 
-##### Long Reads:
+Long Reads
 <table>
 </tbody>
     <tr>
