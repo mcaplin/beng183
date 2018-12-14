@@ -192,7 +192,7 @@ https://www.ncbi.nlm.nih.gov/pubmed/24532719?dopt=Abstract
 
 <a name="2"></a><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">[2]</a> Conesa, Ana, et al. “A Survey of Best Practices for RNA-Seq Data Analysis.” Genome Biology, BioMed Central, 26 Jan. 2016 <br>
 
-<a name="3"></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> Ruiqiang Li, Yingrui Li, Karsten Kristiansen, Jun Wang; SOAP: short oligonucleotide alignment program, Bioinformatics, Volume 24, Issue 5, 1 March 2008, Pages 713–714 <br>
+<a id="3"></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> Ruiqiang Li, Yingrui Li, Karsten Kristiansen, Jun Wang; SOAP: short oligonucleotide alignment program, Bioinformatics, Volume 24, Issue 5, 1 March 2008, Pages 713–714 <br>
 
 <a name="4"></a><a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537">[4]</a> Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras; STAR: ultrafast universal RNA-seq aligner, Bioinformatics, Volume 29, Issue 1, 1 January 2013, Pages 15–21 <br>
 
