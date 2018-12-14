@@ -71,8 +71,8 @@ RNA-Seq has many different applications depending on the goal of the experiment.
 Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
 
-- **FastQC:** tool to perform analysis on Illumina reads
-- **NGSQC:** tool to perform analysis on any platform 
+- **FastQC:** tool to perform analysis on Illumina reads [[2]](#2)
+- **NGSQC:** tool to perform analysis on any platform [[2]](#2)
 
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
@@ -140,7 +140,7 @@ There are different types of alignment tools for different purposes. The tools y
 </tbody>
 </table>
 
-#### Alignment tools with no reference genome:
+#### Alignment tools with no reference genome
 <table>
 </tbody>
     <tr>
@@ -170,22 +170,22 @@ There are different types of alignment tools for different purposes. The tools y
 ### 3) Advanced-Analysis
 Differential Expression: When genes are expressed differently in an experiment group vs a control group, we use differential expression analysis to compare the samples. To analyze the differences, we must first normalize the data. 
 After using TopHat, a common tool for advanced analysis is the CuffLinks package. Cuffdiff is typically used after TopHat.
-<ul>
-<li> **Cuffdiff:** Takes aligned reads and provides a statistical analysis of transcripts that are differentially expressed. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a> </li>
-</ul>
+
+- **Cuffdiff:** Takes aligned reads and provides a statistical analysis of transcripts that are differentially expressed. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a>
+
 
 There are also many tools for visualization.
-<ul>
-	<li>
-	</li>
-</ul>
+
+- **ReadXplorer:** Visualize at the level of the reads <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> [1](#1)
+- **UCSC browser:** Visualize at the level of processed coverage
+- **CummeRbund:** Part of the CuffLinks package. Plots abundance and differential expression results from Cuffdiff.
 
 Many tools for visualization.
 Level of reads: ReadXplorerer
 https://www.ncbi.nlm.nih.gov/pubmed/24790157?dopt=Abstract
 Level of processed coverage: UCSC browser
 https://www.ncbi.nlm.nih.gov/pubmed/12045153?dopt=Abstract
-CummeRbund: for CuffDiff. Plots abundance and differential expression results from Cuffdiff
+CummeRbund: for CuffDiff. 
 
 
 
@@ -226,3 +226,5 @@ CummeRbund: for CuffDiff. Plots abundance and differential expression results fr
 <a name="8"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a> Schulz, Marcel H et al. “Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels” Bioinformatics (Oxford, England) vol. 28,8 (2012): 1086-92. <br>
 
 <a name="9"></a><a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a> Yinlong Xie, Gengxiong Wu, Jingbo Tang, Ruibang Luo, Jordan Patterson, Shanlin Liu, Weihua Huang, Guangzhu He, Shengchang Gu, Shengkang Li, Xin Zhou, Tak-Wah Lam, Yingrui Li, Xun Xu, Gane Ka-Shu Wong, Jun Wang; SOAPdenovo-Trans: de novo transcriptome assembly with short RNA-Seq reads, Bioinformatics, Volume 30, Issue 12, 15 June 2014, Pages 1660–1666
+
+<a name="10"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> Hilker, Rolf et al. “ReadXplorer--visualization and analysis of mapped sequences” Bioinformatics (Oxford, England) vol. 30,16 (2014): 2247-54.
