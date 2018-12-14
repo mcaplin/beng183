@@ -3,8 +3,8 @@
 	1.1. [RNA-Seq General Workflow](#part1.1)
 2. [Why RNA-Seq?](#part2)
 3. [Methods of Analysis](#part3)<br>
-	3.1. [Pre-Analysis](#part3.1)
-	3.2. [Core-Analysis](#part3.2)
+	3.1. [Pre-Analysis](#part3.1)<br>
+	3.2. [Core-Analysis](#part3.2)<br>
 	3.3. [Advanced-Analysis](#part3.3)
 
 
