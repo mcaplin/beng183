@@ -1,22 +1,20 @@
 # RNA-Seq (RNA Sequencing)
-1. [Introduction](#231)
-2. [Overivew of 3C methods](#232)<br>
-    2.1. [Specificity](#2321)<br>
-    2.2. [Through-put and resolution](#2322)
-3. [Hi-C](#233)
-4. [ChIA-PET](#234)
-5. [Selected methods comparison](#235)
+1. [Introduction](#part1)<br>
+	1.1. [RNA-Seq General Workflow](#part1.1)
+2. [Why RNA-Seq?](#part2)
+3. [Methods of Analysis](#part3)<br>
+	3.1. [Pre-Analysis](#part3.1)
+	3.2. [Core-Analysis](#part3.2)
+	3.3. [Advanced-Analysis](#part3.3)
 
 
-
-
-## Introduction<a name="231"></a>
+## Introduction<a name="part1"></a>
 
 RNA-Seq is a tool that uses next-generation sequencing technologies to profile the RNA transcriptome. RNA-Seq is a high throughput tool that can provide much more in depth analysis of transcriptomes compared to other methods.
 
 > In this analysis, we will be going over the general idea of RNA-Seq and some of the popular tools for its use.
 
-#### RNA-Seq General Workflow
+#### RNA-Seq General Workflow<a name="part1.1"></a>
 - Select Samples of Interest
 - Isolate RNAs
 - Generate cDNA, fragment and select size, add sequencing adaptors
@@ -28,7 +26,7 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 >[figure 1](#1)<br>
 >Basic example of an RNA-seq experiment
 
-## Why RNA-Seq?<a name="232"></a>
+## Why RNA-Seq?<a name="part2"></a>
 
 RNA-Seq offers many advantages over previous methods of transcriptome profiling.
 
@@ -62,12 +60,12 @@ These are the advantages and disadvantages compared to Microarrays [[1]](#1):
 </table>
 
 
-## Methods of Analysis
+## Methods of Analysis<a name="part3"></a>
 RNA-Seq has many different applications depending on the goal of the experiment. There is no optimal pipeline for every scenario, and as such, there are a variety of protocols to quantify RNA.
 ![fig2](https://media.springernature.com/lw785/springer-static/image/art%3A10.1186%2Fs13059-016-0881-8/MediaObjects/13059_2016_881_Fig1_HTML.gif "RNA-Seq roadmap")
 >[figure 2](#2)<br>
 >The image above shows the generic steps for RNA-seq analysis. This can be split into three main parts: Pre-analysis, Core-analysis, and Advanced-analysis. We will go over each step and some of the tools used. For each step, there are different types of potential methods to use.
-### 1) Pre-Analysis
+### 1) Pre-Analysis<a name="part3.1"></a>
 Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
 
@@ -77,7 +75,7 @@ Two tools to do this are:
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
 > Now that we've got our reads, we can begin mapping them to the genome
-### 2) Core-Analysis
+### 2) Core-Analysis<a name="part3.2"></a>
 There are different types of alignment tools for different purposes. The tools you use depend on whether or not you have a reference genome, the types of reads you have, and the degree of specificity you are looking for in your results.
 #### Alignment tools with a reference genome
 **Short Reads**
@@ -167,7 +165,7 @@ There are different types of alignment tools for different purposes. The tools y
 </tbody>
 </table>
 
-### 3) Advanced-Analysis
+### 3) Advanced-Analysis<a name="part3.3"></a>
 Differential Expression: When genes are expressed differently in an experiment group vs a control group, we use differential expression analysis to compare the samples. To analyze the differences, we must first normalize the data. <br>
 A common tool for advanced analysis is the CuffLinks package. Cuffdiff, part of that package, is typically used after TopHat.
 
@@ -184,7 +182,7 @@ There are also many different tools for visualization. A few are:
 
 
 
-# References
+# References<a name="part4"></a>
 
 <a name="1"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/">[1]</a> Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63. <br>
 
