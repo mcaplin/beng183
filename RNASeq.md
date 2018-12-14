@@ -92,7 +92,7 @@ There are different types of alignment tools for different purposes. The tools y
 			SOAP (short oligonucleotide alignment program) 
 	</td>
 	<td>
-		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. <a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> [[3]](#3)
+		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. <a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> 
 	</td>
 	<tr>
 		<td>
@@ -121,7 +121,7 @@ There are different types of alignment tools for different purposes. The tools y
 </tr>
  </tbody>
 </table>
-
+[[3]](#3)
 **Long Reads**
 <table>
 </tbody>
@@ -176,16 +176,9 @@ After using TopHat, a common tool for advanced analysis is the CuffLinks package
 
 There are also many tools for visualization.
 
-- **ReadXplorer:** Visualize at the level of the reads <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> [1](#1)
-- **UCSC browser:** Visualize at the level of processed coverage
-- **CummeRbund:** Part of the CuffLinks package. Plots abundance and differential expression results from Cuffdiff.
-
-Many tools for visualization.
-Level of reads: ReadXplorerer
-https://www.ncbi.nlm.nih.gov/pubmed/24790157?dopt=Abstract
-Level of processed coverage: UCSC browser
-https://www.ncbi.nlm.nih.gov/pubmed/12045153?dopt=Abstract
-CummeRbund: for CuffDiff. 
+- **ReadXplorer:** Visualize at the level of the reads [[10]](#10)
+- **UCSC browser:** Visualize at the level of processed coverage [[11]](#11) 
+- **CummeRbund:** Part of the CuffLinks package. Plots abundance and differential expression results from Cuffdiff. [[7]](#7)
 
 
 
@@ -206,8 +199,7 @@ CummeRbund: for CuffDiff.
 
 
 
-
-# Reference
+# References
 
 <a name="1"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2949280/">[1]</a> Wang, Zhong et al. “RNA-Seq: a revolutionary tool for transcriptomics” Nature reviews. Genetics vol. 10,1 (2009): 57-63. <br>
 
@@ -228,3 +220,5 @@ CummeRbund: for CuffDiff.
 <a name="9"></a><a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a> Yinlong Xie, Gengxiong Wu, Jingbo Tang, Ruibang Luo, Jordan Patterson, Shanlin Liu, Weihua Huang, Guangzhu He, Shengchang Gu, Shengkang Li, Xin Zhou, Tak-Wah Lam, Yingrui Li, Xun Xu, Gane Ka-Shu Wong, Jun Wang; SOAPdenovo-Trans: de novo transcriptome assembly with short RNA-Seq reads, Bioinformatics, Volume 30, Issue 12, 15 June 2014, Pages 1660–1666
 
 <a name="10"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> Hilker, Rolf et al. “ReadXplorer--visualization and analysis of mapped sequences” Bioinformatics (Oxford, England) vol. 30,16 (2014): 2247-54.
+
+<a name="11"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/">[11]</a> Kent, W James et al. “The human genome browser at UCSC” Genome research vol. 12,6 (2002): 996-1006.
