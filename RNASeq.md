@@ -79,7 +79,7 @@ After getting the raw reads, we discard low quality reads, trim adaptor sequence
 There are different types of alignment tools for different purposes. The tools you use depend on whether or not you have a reference genome, the types of reads you have, and the degree of specificity you are looking for in your results.
 #### Alignment tools with a reference genome:
 
-Short Reads
+**Short Reads**
 <table>
  <tbody>
     <tr>
@@ -88,11 +88,12 @@ Short Reads
     </tr>
 	<tr>
 		<td>
-			SOAP (short oligonucleotide alignment program)
+			SOAP (short oligonucleotide alignment program) [3](#3)
 	</td>
 	<td>
-		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. [1](#3)
+		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. [3](#3)
 	</td>
+	[3](#3)
 	<tr>
 		<td>
 			STAR (Spliced Transcripts Alignment to a Reference)
@@ -122,7 +123,7 @@ Short Reads
 </table>
 
 
-Long Reads
+**Long Reads**
 <table>
 </tbody>
     <tr>
