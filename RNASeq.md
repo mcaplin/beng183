@@ -88,18 +88,17 @@ There are different types of alignment tools for different purposes. The tools y
     </tr>
 	<tr>
 		<td>
-			SOAP (short oligonucleotide alignment program) [3](#3)
+			SOAP (short oligonucleotide alignment program) 
 	</td>
 	<td>
-		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. [3](#3)
+		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads.
 	</td>
-	[3](#3)
 	<tr>
 		<td>
 			STAR (Spliced Transcripts Alignment to a Reference)
 		</td>
 		<td>
-			Unbiased de novo detection of canonical junctions. Can discover non-canonical splices and chimeric transcripts. Can map full-length RNA sequences. [4](#4)
+			Unbiased de novo detection of canonical junctions. Can discover non-canonical splices and chimeric transcripts. Can map full-length RNA sequences.
 		</td>
 	</tr>
 	<tr>
@@ -107,7 +106,7 @@ There are different types of alignment tools for different purposes. The tools y
 			Eland
 		</td>
 		<td>
-			Faster than SOAP. Gives more information about repetitive structures and alternative mapping. Meant for short sequences (under 32bp) but can map longer reads with additional scripts. [5](#5)
+			Faster than SOAP. Gives more information about repetitive structures and alternative mapping. Meant for short sequences (under 32bp) but can map longer reads with additional scripts.
 		</td>
 	</tr>
 	<tr>
@@ -115,13 +114,13 @@ There are different types of alignment tools for different purposes. The tools y
 			BWA (Burrows-Wheeler Alignment tool)
 		</td>
 		<td>
-			Align short sequences onto a large genome, allowing for mismatches and gaps. [6](#6)
+			Align short sequences onto a large genome, allowing for mismatches and gaps.
 		</td>
 	</tr>
 </tr>
  </tbody>
 </table>
-
+SOAP [[3]](#3), STAR [[4]](#4), Eland [[5]](#5), BWA [[6]](#6)
 
 **Long Reads**
 <table>
