@@ -11,7 +11,7 @@
 
 ## Introduction<a name="part1"></a>
 
-RNA-Seq is a tool that uses next-generation sequencing technologies to profile the RNA transcriptome. RNA-Seq is a high throughput tool that can provide much more in depth analysis of transcriptomes compared to other methods.
+RNA-Seq is a tool that uses next-generation sequencing technologies to profile the RNA transcriptome. RNA-Seq is a high throughput tool that can provide much more in depth analysis of transcriptomes compared to other methods. As computing and storage technology increase, we can target more complex transcriptomes and better understand and quantify gene expression.
 
 > In this analysis, we will be going over the general idea of RNA-Seq and some of the popular tools for its use.
 
