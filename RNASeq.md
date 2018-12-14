@@ -70,11 +70,10 @@ RNA-Seq has many different applications depending on the goal of the experiment.
 ### 1) Pre-Analysis
 Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
-<ul>
-<li>**FastQC:** *tool to perform analysis on Illumina reads* </li>
-<li>**NGSQC:** *tool to perform analysis on any platform* </li>
-</ul>
-<br>
+
+- **FastQC:** tool to perform analysis on Illumina reads
+- **NGSQC:** tool to perform analysis on any platform 
+
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
 > Now that we've got our reads, we can begin mapping them to the genome
