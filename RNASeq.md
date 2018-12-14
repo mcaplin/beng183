@@ -66,19 +66,21 @@ These are the advantages and disadvantages compared to Microarrays [[1]](#1):
 RNA-Seq has many different applications depending on the goal of the experiment. There is no optimal pipeline for every scenario, and as such, there are a variety of protocols to quantify RNA.
 ![fig2](https://media.springernature.com/lw785/springer-static/image/art%3A10.1186%2Fs13059-016-0881-8/MediaObjects/13059_2016_881_Fig1_HTML.gif "RNA-Seq roadmap")
 >[figure 2](#2)<br>
->The image above shows the generic steps for RNA-seq analysis. This can be split into three main parts: Pre-analysis, Core-analysis, and Advanced-analysis. We will go over each step and some of the tools used.
+>The image above shows the generic steps for RNA-seq analysis. This can be split into three main parts: Pre-analysis, Core-analysis, and Advanced-analysis. We will go over each step and some of the tools used. For each step, there are different types of potential methods to use.
 ### 1) Pre-Analysis
 Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
-- FastQC: *tool to perform analysis on Illumina reads* 
-- NGSQC: *tool to perform analysis on any platform* 
+<ul>
+<li>**FastQC:** *tool to perform analysis on Illumina reads* </li>
+<li>**NGSQC:** *tool to perform analysis on any platform* </li>
+</ul>
+<br>
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
 > Now that we've got our reads, we can begin mapping them to the genome
 ### 2) Core-Analysis
 There are different types of alignment tools for different purposes. The tools you use depend on whether or not you have a reference genome, the types of reads you have, and the degree of specificity you are looking for in your results.
-#### Alignment tools with a reference genome:
-
+#### Alignment tools with a reference genome
 **Short Reads**
 <table>
  <tbody>
@@ -88,17 +90,17 @@ There are different types of alignment tools for different purposes. The tools y
     </tr>
 	<tr>
 		<td>
-			SOAP (short oligonucleotide alignment program) [[3]](#3)
+			SOAP (short oligonucleotide alignment program) 
 	</td>
 	<td>
-		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads.
+		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. <a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> [[3]](#3)
 	</td>
 	<tr>
 		<td>
 			STAR (Spliced Transcripts Alignment to a Reference)
 		</td>
 		<td>
-			Unbiased de novo detection of canonical junctions. Can discover non-canonical splices and chimeric transcripts. Can map full-length RNA sequences.
+			Unbiased de novo detection of canonical junctions. Can discover non-canonical splices and chimeric transcripts. Can map full-length RNA sequences. <a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537">[4]</a>
 		</td>
 	</tr>
 	<tr>
@@ -106,7 +108,7 @@ There are different types of alignment tools for different purposes. The tools y
 			Eland
 		</td>
 		<td>
-			Faster than SOAP. Gives more information about repetitive structures and alternative mapping. Meant for short sequences (under 32bp) but can map longer reads with additional scripts.
+			Faster than SOAP. Gives more information about repetitive structures and alternative mapping. Meant for short sequences (under 32bp) but can map longer reads with additional scripts. <a href="massgenomics.org/2008/05/short-read-aligners-maq-eland-and-others.html">[5]</a>
 		</td>
 	</tr>
 	<tr>
@@ -114,14 +116,12 @@ There are different types of alignment tools for different purposes. The tools y
 			BWA (Burrows-Wheeler Alignment tool)
 		</td>
 		<td>
-			Align short sequences onto a large genome, allowing for mismatches and gaps.
+			Align short sequences onto a large genome, allowing for mismatches and gaps. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2705234/">[6]</a>
 		</td>
 	</tr>
 </tr>
  </tbody>
 </table>
-<br>
-SOAP [[3]](#1)
 
 **Long Reads**
 <table>
@@ -135,7 +135,7 @@ SOAP [[3]](#1)
 		TopHat
 	</td>
 	<td>
-		Align reads to the genome and discover transcript splice sites [7](#7)
+		Align reads to the genome and discover transcript splice sites <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a>
 	</td>
 </tr>
 </tbody>
@@ -153,19 +153,40 @@ SOAP [[3]](#1)
 		Oases
 	</td>
 	<td>
-		Assemble RNA-seq reads without a reference gehome [8](#8)
+		Assemble RNA-seq reads without a reference genome <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a>
 	</td>
+	<tr>
+		<td>
+			SOAPdenovo-Trans
+		</td>
+		<td>
+			Higher contiguity, lower redundancy, faster execution. <a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a>
+		</td>
+	</tr>
 </tr>
 
 </tbody>
 </table>
-Oases: 
 
-SOAPdenovo-Trans: higher contiguity, lower redundancy, faster execution
-https://arxiv.org/ftp/arxiv/papers/1305/1305.6760.pdf
-https://www.ncbi.nlm.nih.gov/pubmed/24532719?dopt=Abstract
+### 3) Advanced-Analysis
+Differential Expression: When genes are expressed differently in an experiment group vs a control group, we use differential expression analysis to compare the samples. To analyze the differences, we must first normalize the data. 
+After using TopHat, a common tool for advanced analysis is the CuffLinks package. Cuffdiff is typically used after TopHat.
+<ul>
+<li> **Cuffdiff:** Takes aligned reads and provides a statistical analysis of transcripts that are differentially expressed. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a> </li>
+</ul>
 
-### 3) Advanced Analysis
+There are also many tools for visualization.
+<ul>
+	<li>
+	</li>
+</ul>
+
+Many tools for visualization.
+Level of reads: ReadXplorerer
+https://www.ncbi.nlm.nih.gov/pubmed/24790157?dopt=Abstract
+Level of processed coverage: UCSC browser
+https://www.ncbi.nlm.nih.gov/pubmed/12045153?dopt=Abstract
+CummeRbund: for CuffDiff. Plots abundance and differential expression results from Cuffdiff
 
 
 
@@ -204,3 +225,5 @@ https://www.ncbi.nlm.nih.gov/pubmed/24532719?dopt=Abstract
 <a name="7"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a> Trapnell, Cole et al. “Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks” Nature protocols vol. 7,3 562-78. 1 Mar. 2012, doi:10.1038/nprot.2012.016 <br>
 
 <a name="8"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a> Schulz, Marcel H et al. “Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels” Bioinformatics (Oxford, England) vol. 28,8 (2012): 1086-92. <br>
+
+<a name="9"></a><a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a> Yinlong Xie, Gengxiong Wu, Jingbo Tang, Ruibang Luo, Jordan Patterson, Shanlin Liu, Weihua Huang, Guangzhu He, Shengchang Gu, Shengkang Li, Xin Zhou, Tak-Wah Lam, Yingrui Li, Xun Xu, Gane Ka-Shu Wong, Jun Wang; SOAPdenovo-Trans: de novo transcriptome assembly with short RNA-Seq reads, Bioinformatics, Volume 30, Issue 12, 15 June 2014, Pages 1660–1666
