@@ -91,7 +91,7 @@ Short Reads
 			SOAP (short oligonucleotide alignment program)
 	</td>
 	<td>
-		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. [3](#3)
+		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads. [1](#3)
 	</td>
 	<tr>
 		<td>
