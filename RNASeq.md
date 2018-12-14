@@ -16,7 +16,7 @@ RNA-Seq is a tool that uses next-generation sequencing technologies to profile t
 
 > In this analysis, we will be going over the general idea of RNA-Seq and some of the popular tools for its use.
 
-##### RNA-Seq General Workflow
+#### RNA-Seq General Workflow
 - Select Samples of Interest
 - Isolate RNAs
 - Generate cDNA, fragment and select size, add sequencing adaptors
@@ -54,7 +54,7 @@ These are the advantages and disadvantages compared to Microarrays [[1]](#1):
 		<ul>
 		<li>More cost-efficient</li>
 		<li>Less complex analysis</li>
-		<li>Requires Less computing power</li>
+		<li>Requires less computing power</li>
 	</ul>
 	</td>
 </tr>
@@ -71,8 +71,8 @@ RNA-Seq has many different applications depending on the goal of the experiment.
 Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
 
-- **FastQC:** tool to perform analysis on Illumina reads [[2]](#2)
-- **NGSQC:** tool to perform analysis on any platform [[2]](#2)
+- **FastQC:** Tool to perform analysis on Illumina reads. [[2]](#2)
+- **NGSQC:** Tool to perform analysis on any platform. [[2]](#2)
 
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
 
@@ -121,10 +121,10 @@ There are different types of alignment tools for different purposes. The tools y
 </tr>
  </tbody>
 </table>
-[[3]](#3)
+
 **Long Reads**
 <table>
-</tbody>
+	<tbody>
     <tr>
         <th>Method</td>
 		<th>Description</td>
@@ -134,7 +134,7 @@ There are different types of alignment tools for different purposes. The tools y
 		TopHat
 	</td>
 	<td>
-		Align reads to the genome and discover transcript splice sites <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a>
+		Align reads to the genome and discover transcript splice sites. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a>
 	</td>
 </tr>
 </tbody>
@@ -142,7 +142,7 @@ There are different types of alignment tools for different purposes. The tools y
 
 #### Alignment tools with no reference genome
 <table>
-</tbody>
+	<tbody>
     <tr>
         <th>Method</td>
 		<th>Description</td>
@@ -152,7 +152,7 @@ There are different types of alignment tools for different purposes. The tools y
 		Oases
 	</td>
 	<td>
-		Assemble RNA-seq reads without a reference genome <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a>
+		Assemble RNA-seq reads without a reference genome. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a>
 	</td>
 	<tr>
 		<td>
@@ -168,32 +168,17 @@ There are different types of alignment tools for different purposes. The tools y
 </table>
 
 ### 3) Advanced-Analysis
-Differential Expression: When genes are expressed differently in an experiment group vs a control group, we use differential expression analysis to compare the samples. To analyze the differences, we must first normalize the data. 
-After using TopHat, a common tool for advanced analysis is the CuffLinks package. Cuffdiff is typically used after TopHat.
+Differential Expression: When genes are expressed differently in an experiment group vs a control group, we use differential expression analysis to compare the samples. To analyze the differences, we must first normalize the data. <br>
+A common tool for advanced analysis is the CuffLinks package. Cuffdiff, part of that package, is typically used after TopHat.
 
 - **Cuffdiff:** Takes aligned reads and provides a statistical analysis of transcripts that are differentially expressed. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a>
 
 
-There are also many tools for visualization.
+There are also many different tools for visualization. A few are:
 
-- **ReadXplorer:** Visualize at the level of the reads [[10]](#10)
-- **UCSC browser:** Visualize at the level of processed coverage [[11]](#11) 
+- **ReadXplorer:** Visualize at the level of the reads. [[10]](#10)
+- **UCSC browser:** Visualize at the level of processed coverage. [[11]](#11) 
 - **CummeRbund:** Part of the CuffLinks package. Plots abundance and differential expression results from Cuffdiff. [[7]](#7)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -217,8 +202,8 @@ There are also many tools for visualization.
 
 <a name="8"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a> Schulz, Marcel H et al. “Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels” Bioinformatics (Oxford, England) vol. 28,8 (2012): 1086-92. <br>
 
-<a name="9"></a><a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a> Yinlong Xie, Gengxiong Wu, Jingbo Tang, Ruibang Luo, Jordan Patterson, Shanlin Liu, Weihua Huang, Guangzhu He, Shengchang Gu, Shengkang Li, Xin Zhou, Tak-Wah Lam, Yingrui Li, Xun Xu, Gane Ka-Shu Wong, Jun Wang; SOAPdenovo-Trans: de novo transcriptome assembly with short RNA-Seq reads, Bioinformatics, Volume 30, Issue 12, 15 June 2014, Pages 1660–1666
+<a name="9"></a><a href="https://academic.oup.com/bioinformatics/article/30/12/1660/380938">[9]</a> Yinlong Xie, Gengxiong Wu, Jingbo Tang, Ruibang Luo, Jordan Patterson, Shanlin Liu, Weihua Huang, Guangzhu He, Shengchang Gu, Shengkang Li, Xin Zhou, Tak-Wah Lam, Yingrui Li, Xun Xu, Gane Ka-Shu Wong, Jun Wang; SOAPdenovo-Trans: de novo transcriptome assembly with short RNA-Seq reads, Bioinformatics, Volume 30, Issue 12, 15 June 2014, Pages 1660–1666 <br>
 
-<a name="10"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> Hilker, Rolf et al. “ReadXplorer--visualization and analysis of mapped sequences” Bioinformatics (Oxford, England) vol. 30,16 (2014): 2247-54.
+<a name="10"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4217279/">[10]</a> Hilker, Rolf et al. “ReadXplorer--visualization and analysis of mapped sequences” Bioinformatics (Oxford, England) vol. 30,16 (2014): 2247-54. <br>
 
-<a name="11"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/">[11]</a> Kent, W James et al. “The human genome browser at UCSC” Genome research vol. 12,6 (2002): 996-1006.
+<a name="11"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC186604/">[11]</a> Kent, W James et al. “The human genome browser at UCSC” Genome research vol. 12,6 (2002): 996-1006. <br>
