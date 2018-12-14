@@ -73,12 +73,12 @@ Two tools to do this are:
 - FastQC: *tool to perform analysis on Illumina reads* 
 - NGSQC: *tool to perform analysis on any platform* 
 After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [[2]](#2)
-[[3]](#3)
+
 > Now that we've got our reads, we can begin mapping them to the genome
 ### 2) Core-Analysis
 There are different types of alignment tools for different purposes. The tools you use depend on whether or not you have a reference genome, the types of reads you have, and the degree of specificity you are looking for in your results.
 #### Alignment tools with a reference genome:
-[[3]](#3)
+
 **Short Reads**
 <table>
  <tbody>
@@ -88,7 +88,7 @@ There are different types of alignment tools for different purposes. The tools y
     </tr>
 	<tr>
 		<td>
-			SOAP (short oligonucleotide alignment program) [[3]](#3) [[3]](#1)
+			SOAP (short oligonucleotide alignment program) [[3]](#3)
 	</td>
 	<td>
 		Efficiently align large amounts of short reads on to reference sequences using Illumina sequencing. Allows gaps and mismatched reads.
@@ -120,6 +120,7 @@ There are different types of alignment tools for different purposes. The tools y
 </tr>
  </tbody>
 </table>
+<br>
 SOAP [[3]](#1)
 
 **Long Reads**
