@@ -72,7 +72,7 @@ Before we can analyze anything, first we must retrieve raw reads of a sequence.
 Two tools to do this are:
 - FastQC: *tool to perform analysis on Illumina reads* 
 - NGSQC: *tool to perform analysis on any platform* 
-After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases.[2](#2)
+After getting the raw reads, we discard low quality reads, trim adaptor sequences, and eliminate poor-quality bases. [2](#2)
 
 > Now that we've got our reads, we can begin mapping them to the genome
 ### 2) Core-Analysis
@@ -125,6 +125,10 @@ There are different types of alignment tools for different purposes. The tools y
 ##### Long Reads:
 <table>
 </tbody>
+    <tr>
+        <th>Method</td>
+		<th>Description</td>
+    </tr>
 <tr>
 	<td>
 		TopHat
@@ -139,6 +143,10 @@ There are different types of alignment tools for different purposes. The tools y
 #### Alignment tools with no reference genome:
 <table>
 </tbody>
+    <tr>
+        <th>Method</td>
+		<th>Description</td>
+    </tr>
 <tr>
 	<td>
 		Oases
@@ -267,14 +275,14 @@ ChIA-PET is another method that combines ChIP and pair-end sequencing to analysi
 
 <a name="2"></a><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0881-8">[2]</a> Conesa, Ana, et al. “A Survey of Best Practices for RNA-Seq Data Analysis.” Genome Biology, BioMed Central, 26 Jan. 2016 <br>
 
-<a name="3"><a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> Ruiqiang Li, Yingrui Li, Karsten Kristiansen, Jun Wang; SOAP: short oligonucleotide alignment program, Bioinformatics, Volume 24, Issue 5, 1 March 2008, Pages 713–714 <br>
+<a name="3"></a><a href="https://www.ncbi.nlm.nih.gov/pubmed/18227114">[3]</a> Ruiqiang Li, Yingrui Li, Karsten Kristiansen, Jun Wang; SOAP: short oligonucleotide alignment program, Bioinformatics, Volume 24, Issue 5, 1 March 2008, Pages 713–714 <br>
 
-<a name="4"><a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537">[4]</a> Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras; STAR: ultrafast universal RNA-seq aligner, Bioinformatics, Volume 29, Issue 1, 1 January 2013, Pages 15–21 <br>
+<a name="4"></a><a href="https://academic.oup.com/bioinformatics/article/29/1/15/272537">[4]</a> Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras; STAR: ultrafast universal RNA-seq aligner, Bioinformatics, Volume 29, Issue 1, 1 January 2013, Pages 15–21 <br>
 
-<a name="5"><a href="massgenomics.org/2008/05/short-read-aligners-maq-eland-and-others.html">[5]</a> dkoboldt. “Short Read Aligners: Maq, Eland, and Others.” MassGenomics, 14 May 2008 <br>
+<a name="5"></a><a href="massgenomics.org/2008/05/short-read-aligners-maq-eland-and-others.html">[5]</a> dkoboldt. “Short Read Aligners: Maq, Eland, and Others.” MassGenomics, 14 May 2008 <br>
 
-<a name="6"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2705234/">[6]</a> Li, Heng and Richard Durbin. “Fast and accurate short read alignment with Burrows-Wheeler transform” Bioinformatics (Oxford, England) vol. 25,14 (2009): 1754-60. <br>
+<a name="6"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2705234/">[6]</a> Li, Heng and Richard Durbin. “Fast and accurate short read alignment with Burrows-Wheeler transform” Bioinformatics (Oxford, England) vol. 25,14 (2009): 1754-60. <br>
 
-<a name="7"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a> Trapnell, Cole et al. “Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks” Nature protocols vol. 7,3 562-78. 1 Mar. 2012, doi:10.1038/nprot.2012.016 <br>
+<a name="7"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3334321/">[7]</a> Trapnell, Cole et al. “Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks” Nature protocols vol. 7,3 562-78. 1 Mar. 2012, doi:10.1038/nprot.2012.016 <br>
 
-<a name="8"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a> Schulz, Marcel H et al. “Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels” Bioinformatics (Oxford, England) vol. 28,8 (2012): 1086-92. <br>
+<a name="8"></a><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3324515/">[8]</a> Schulz, Marcel H et al. “Oases: robust de novo RNA-seq assembly across the dynamic range of expression levels” Bioinformatics (Oxford, England) vol. 28,8 (2012): 1086-92. <br>
